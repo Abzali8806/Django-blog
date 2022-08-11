@@ -1,0 +1,67 @@
+.navbar {
+    background-color: white;
+    height: 10%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Shared class for all components in navbar */
+.nav-nodes {
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid black;
+}
+/*  end comment */
+
+
+.navbar-brand {
+    width: 12.5%;
+}
+
+.form-container {
+    width: 50%;
+}
+
+.profile-widgets-container {
+    width: 25%;
+    justify-content: space-evenly;
+}
+
+.login-container {
+    width: 12.5%;
+}
+
+.navbar form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.nav-btn {
+    font-weight: bold;
+    color: white;
+    background: gray;
+    padding: 3px;
+    margin-left: 10px;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+#search-bar {
+    background-color: lightgray;
+    width: 70%;
+    padding: 3px;
+    border: 2px solid black;
+    border-radius: 3px;
+} 

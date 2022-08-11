@@ -1,0 +1,24 @@
+{% extends 'browser/base.html' %}
+
+{% block content %}
+    <div class="headings">
+        <h1 class="spacepage-header">Spaces</h1>
+    </div>
+    <div class="space-container">
+        {% for space in spaces %}
+            {% if search.lower in space.title.lower %}
+                <div class="spaces">
+                    <h3>{{ space.title }}</h3>
+                    <small>{{ space.slug }}</small><br>
+                    <small>{{ space.date_added }}</small>
+                    {% if space.intro != '' %}
+                        <br>
+                        <p class="intro-text">Intro: {{ space.intro }}</p>                    
+                    {% endif %}
+                    <br><br>
+                    <a class="read-more" href="{% url 'space_detail' space.slug %}"> Read more ...</a>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endblock %}

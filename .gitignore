@@ -1,0 +1,39 @@
+# created by virtualenv automatically
+
+# Django #
+*.log
+*.pot
+*.pyc
+*.cfg
+__pycache__
+db.sqlite3
+media
+
+# Visual Studio Code # 
+.vscode/* 
+!.vscode/settings.json 
+!.vscode/tasks.json 
+!.vscode/launch.json 
+!.vscode/extensions.json 
+.history
+
+# Django   
+*.log
+*.pot
+*.pyc
+*/__pycache__
+manage.py
+blog_em/blog/migrations/*
+blog_em/browser/migrations/*
+
+blog_em/db.sqlite3
+
+
+# etc
+bin/
+lib/
+
+# blog_em folder
+/blog_em/blog_em/__init__.py
+/blog_em/blog_em/settings.py
+/blog_em/blog_em/wsgi.py

@@ -1,0 +1,36 @@
+{% extends 'blog/base.html' %}
+
+{% block head %}
+<header>
+    <div class="head-container">
+        <h1>{{ space.title }}</h1>
+        <p>{{ space.intro }}</p>
+    </div>
+    <div class="h-e-container">
+        <p></p>
+    </div>
+</header>
+{% endblock %}
+
+
+{% block content %}
+<nav class="create-post-container">
+    <a class="c-post-link" href="create_post/">
+        <textarea class="cp-txt-area" rows="3">Create Post: </textarea>
+    </a>
+</nav>
+{% for post in posts %}
+    {% if space.slug == post.spaceslug: %} <!-- Need to change this line. previously changed                                 space_slug and post_slug in POST model -->
+        <div class="posts">
+            <div class="post-header">
+                    <h2>{{ post.title }}</h2>
+                    <small>{{ post.post_slug }}</small><br>
+                    <small>Posted at {{ post.date_added }}</small>
+            </div>
+            <p>{{ post.intro }}</p>
+        </div>
+    {% endif %}
+{% endfor %}
+{% endblock %}
+<!-- <a class="read-more" href="{% url 'post_detail' post.postslug %}"> Read more ...</a> -->
+<!-- {% url 'post_detail' post.post_slug %} -->

@@ -1,0 +1,73 @@
+/* Main body styling ---> */
+/* Generic Features */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: whitesmoke;
+    height: 100%;
+}
+
+section {
+    /* background-color: aqua; */
+    padding-bottom: 20px;
+}
+
+.container {
+    /* padding: 0 25%; */
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+/*  Space-details.html ---> */
+
+/* Create-post anchor div styling */
+.create-post-bar a {
+    text-decoration: none;
+    color: black;
+}
+
+textarea {
+    box-sizing: border-box;
+    background-color: white;
+    width: 100%;
+    padding: 2px 5px;
+    border: 2px solid;
+    border-radius: 3px;
+}
+
+/* Header styling */
+header {
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    border-bottom: 1px solid black;
+}
+.head-container {
+    background-color: whitesmoke;
+    width: 30%;
+    padding: 10px;
+    border-right: 1px solid black;
+}
+.h-e-container {
+    background-image: url(./images/pattern1.jpeg);
+    background-size: cover;
+    color: black;
+    width: 70%;
+}
+
+/* posts styling */
+.posts {
+    background-color: white;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+.post-header {
+    margin-bottom: 20px;
+}

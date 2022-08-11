@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightgray;
+    height: 100%;
+}
+
+.container {
+    padding: 0 25%;
+    height: 100%;
+}
+
+.headings {
+    margin: 30px 0px 20px 0px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.spacepage-header {
+    background-color: white;
+    margin: 20px 0px 40px 0px;
+    width: min-content;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 30px;
+}
+h1 {
+    font-size: 1.1em;
+}
+
+.space-container {
+    background-color: white;
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    border-radius: 5px;
+}
+
+.spaces {
+    padding: 20px;
+    border-bottom: 1px solid gray;
+}
+
+p .intro-text {
+    font-size: 1em;
+}
+
+.space-container .spaces a {
+    text-decoration: solid;
+    color: rgb(69, 177, 245);
+}
